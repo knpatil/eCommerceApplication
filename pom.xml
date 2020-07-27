@@ -8,10 +8,10 @@
 		<version>2.1.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>auth-course</artifactId>
+	<groupId>com.kpatil</groupId>
+	<artifactId>ecommerce-app-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>auth-course</name>
+	<name>ecommerce-app-demo</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -23,6 +23,17 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.10.3</version>
 		</dependency>
 
 		<dependency>
@@ -44,6 +55,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
